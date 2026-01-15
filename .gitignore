@@ -1,0 +1,58 @@
+############################
+# Python & Virtual Envs
+############################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+env/
+venv/
+.venv/
+ENV/
+
+*.egg-info/
+*.egg
+dist/
+build/
+
+############################
+# IDE / Editor
+############################
+.vscode/
+.idea/
+*.iml
+
+############################
+# OS-specific
+############################
+.DS_Store
+Thumbs.db
+
+############################
+# Logs / Temp
+############################
+*.log
+*.tmp
+*.bak
+
+############################
+# Project Data & Outputs
+############################
+# Dữ liệu thô & đã xử lý (rất nặng, không nên đẩy lên git)
+data/
+src/data/
+
+# Model đã train
+models/
+*.pth
+*.pkl
+
+# Kết quả, hình ảnh, báo cáo sinh trong quá trình chạy
+results/
+
+############################
+# Jupyter / Notebook
+############################
+.ipynb_checkpoints/
+
