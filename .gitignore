@@ -40,15 +40,19 @@ Thumbs.db
 # Project Data & Outputs
 ############################
 # Dữ liệu thô & đã xử lý (rất nặng, không nên đẩy lên git)
+# Note: Cấu trúc folder data/1/, data/2/, ..., data/X/, data/Y/, data/unlabeled/ 
+# sẽ không được track, nhưng bạn có thể tạo folder trống với .gitkeep nếu cần
 data/
 src/data/
 
-# Model đã train
+# Model đã train (PCA, supervised, semi-supervised)
+# Các file này có thể tái tạo bằng cách chạy train.py
 models/
 *.pth
 *.pkl
 
 # Kết quả, hình ảnh, báo cáo sinh trong quá trình chạy
+# Có thể tái tạo bằng cách chạy train.py và evaluate.py
 results/
 
 ############################

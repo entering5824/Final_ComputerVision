@@ -43,8 +43,8 @@ def main():
     print("STEP 1: DATA PREPARATION")
     print("=" * 80)
     
-    # Load labeled data (D_L)
-    images, labels = load_labeled_data(config.DATA_DIR)
+    # Load labeled data (D_L) từ các folder 1-22, X, Y trong data/
+    images, labels = load_labeled_data(config.LABELED_DATA_DIR)
     (X_train, y_train), (X_val, y_val), (X_test, y_test) = split_data(
         images, labels, config.TRAIN_RATIO, config.VAL_RATIO, config.TEST_RATIO, config.RANDOM_STATE
     )

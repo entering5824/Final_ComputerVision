@@ -18,8 +18,9 @@ MODELS_DIR.mkdir(parents=True, exist_ok=True)
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
 # Data paths
-LABELED_DATA_DIR = DATA_DIR / "labeled"
-UNLABELED_DATA_DIR = DATA_DIR / "unlabeled"
+# Labeled data (D_L): folders 1-22, X, Y nằm trực tiếp trong data/
+LABELED_DATA_DIR = DATA_DIR  # data/1/, data/2/, ..., data/22/, data/X/, data/Y/
+UNLABELED_DATA_DIR = DATA_DIR / "unlabeled"  # data/unlabeled/ chứa ảnh chưa gán nhãn
 
 # Model paths
 PCA_MODEL_PATH = str(MODELS_DIR / "pca_model.pkl")
